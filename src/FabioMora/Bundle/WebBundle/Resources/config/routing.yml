@@ -1,0 +1,3 @@
+fabio_mora_web_homepage:
+    pattern:  /
+    defaults: { _controller: FabioMoraWebBundle:Default:index }

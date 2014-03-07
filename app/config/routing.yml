@@ -1,0 +1,4 @@
+fabio_mora_web:
+    resource: "@FabioMoraWebBundle/Resources/config/routing.yml"
+    prefix:   /
+

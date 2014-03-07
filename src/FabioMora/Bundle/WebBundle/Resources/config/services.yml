@@ -1,0 +1,7 @@
+parameters:
+#    fabio_mora_web.example.class: FabioMora\Bundle\WebBundle\Example
+
+services:
+#    fabio_mora_web.example:
+#        class: %fabio_mora_web.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

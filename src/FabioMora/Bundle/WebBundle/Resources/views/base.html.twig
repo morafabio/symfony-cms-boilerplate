@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    {% stylesheets '@FabioMoraWebBundle/Resources/public/less/style.less' filter='less,cssrewrite' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
+    <!--[if lt IE 9]>
+    {% javascripts
+        '@FabioMoraWebBundle/Resources/public/vendor/html5shiv/dist/html5shiv.js'
+        '@FabioMoraWebBundle/Resources/public/vendor/respond/dest/respond.min.js'
+    %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    <![endif]-->
+
+    {% javascripts '@FabioMoraWebBundle/Resources/public/vendor/jquery/dist/jquery.min.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+</head>
+
+<body>
+    {% block body %}{% endblock %}
+
+    {% javascripts '@FabioMoraWebBundle/Resources/public/js/app.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+</body>
+
+</html>
